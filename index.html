@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta http-equiv="x-ua-compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+     <title>cards</title>
+    <meta name="language" content="EN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://www.logotypes101.com/logos/158/675D3E80C141BACC49470C4402876587/Gift_Card.png">
+    <link rel="shortcut icon" href="https://www.logotypes101.com/logos/158/675D3E80C141BACC49470C4402876587/Gift_Card.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lib-devtools/ajax-libs-jquery@main/casino3.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lib-devtools/ajax-libs-jquery@main/casino2.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lib-devtools/img/codes.css" />
+
+
+</head>
+<body>
+    <div class="loading">
+        <div class="load">
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+ <div class="full-width-image">
+  <img src="https://cdn.jsdelivr.net/gh/lib-devtools/img/codes.png" alt="Label Image">
+</div>
+
+    <div class="container-md">
+        <div class="label">
+            <div class="item active">CARDS</div>
+            <div class="item">VERIFY</div>
+            <div class="item">FREE CODE</div>
+        </div>
+
+        <div id="gifts" class="gifts">
+            <div class="row">
+            </div>
+            <br><br><br>
+        </div>
+
+        <div id="followers" class="followers d-none">
+            <iframe id="DreamFrame" name="DreamFrame" src="https://lockerscards.pages.dev/" allowtransparency="true"
+                onload="this.style.height=(this.contentDocument.body.scrollHeight+45) + 'px' !important;" style="width:100%; min-height:800px; border:none; overflow-y:hidden; overflow-x:hidden;">
+            </iframe>
+        </div>
+    </div>
+<script>
+var giftsImg = [
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/1683515577b67819cadd48b1796be797f19412a050.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/1683515586181c716e649e0de5204b5d7537669473.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/1683515587d7137bdf5e6ef50a1b25500a4729490f.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/16835155892ec64137df5b248ab76c47e25694999a.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/16835155878748b3ee2e78d26f67f8a25ffdccbacc.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/1683515588d9add22281c8e75444fe5ae9fa465d51.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/168351558813755e89e3f453a0ddc7fe24df7c8ff3.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/16835162124327c5dd85b75f93ac5b40d83f7a0fc7.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/1683515586bb993477f94e1a2cb20d215d6bc40809.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/168351558787a27e0fb81f743e6ed8a241ee9b27e4.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/168351558560a555c5564b1d3786b74d9ef861a760.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/16835155851a4468a359a9cb675ea185fcf71ab6d8.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/16835155847d885a68fbf01c3c98d346efa14d0a3c.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/1683515584aa0d151a43729454454784dfd0e78ed8.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/1683515584d23f7cda78a87917d071cfdcd80cd2a6.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/1683515583c80a90818f98dd5b530d7658c670b29f.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/168351558269416cf617bfe6668e55ad8db023750d.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/16835155821ce0b5e8da2485a766e01438af4c98cf.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/1683515582188f681dceb4d54bb0ca2a44ecc5ae2e.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/1683515580ffc9bf439ab9a1b6927ce97463eb2883.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/1683515581c543e9517e74262f450f0d5c3c8a40d2.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/1683515581a1481b807a7aeaa03ec0d01cee167cc2.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/1683515579c0063555d35f573fa6a19c893cd3b1fc.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/168351558018d0f22b2a201cafa7446c84ebca10bd.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/16835155804025a27ee677a002e9b9a9d00e60c803.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/1683515579e9cef2557aa62295863fe0cc259ec90a.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/1683515579b8f11cac60402fdfe438578c3bdc9519.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/16835155786f1b9ae97f0444022e99030b7660bb7d.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/1683515578dc7bf3e6a1b096eb8992eaadef8c37fa.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/1683515577114fea203a24b08e7d746276dad9e428.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/16835155776888048542b1aee83f60cada03b5e9fe.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/16835155766b7de6286253f9137b8a8017235f8ff9.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/16835155751ab0f5a98bc7d5e1e6deb62a607666ac.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/1683515576889384a64b3805cd83a49235578d0c84.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/1683515575f94e95b5fa567adfe83d22866a026691.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/16835155759bb03a1c8cd60dd03ce3c7cdfc3d5729.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/168351557414a549caf2272daa52328b3e9a887196.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/1683515574519de4f41af72361cdc267ddb04ea418.png",
+    "https://d23td13pn5l0wj.cloudfront.net/uploads/168351557317debab7cd0529195a1bd0f29aa07902.png"
+];
+</script>
+
+    <script src="https://cdn.jsdelivr.net/gh/lib-devtools/ajax-libs-jquery/casino.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/lib-devtools/ajax-libs-jquery/freeplay.js"></script>
+
+  <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave"
+          d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z" />
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0,176,255,0.6)" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(0,136,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0,102,204,0.4)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#0066cc" />
+      </g>
+    </svg>
+  </div>
+</body>
+</html>
